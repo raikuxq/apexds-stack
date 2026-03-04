@@ -1,6 +1,6 @@
 {
   "name": "@apexds/stack",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "LIFO stack for TypeScript. Fully generic, easy to use, and built with developer experience in mind",
   "scripts": {
     "build:lib": "rimraf ./lib && vite build",
