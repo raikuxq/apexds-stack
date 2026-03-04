@@ -1,0 +1,43 @@
+{
+  "name": "@apexds/stack",
+  "version": "1.0.1",
+  "description": "LIFO stack for TypeScript. Fully generic, easy to use, and built with developer experience in mind",
+  "scripts": {
+    "build:lib": "rimraf ./lib && vite build",
+    "build:dts": "dts-bundle-generator -o lib/index.d.ts src/index.ts --no-check --inline-declare-externals --external-inlines @raikuxq/alg-ds",
+    "build:full": "yarn build:lib && yarn build:dts"
+  },
+  "author": {
+    "email": "raikuxqt@gmail.com",
+    "name": "raikuxq"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raikuxq/apexds-stack"
+  },
+  "keywords": [
+    "typescript",
+    "stack"
+  ],
+  "main": "./lib/index.mjs",
+  "module": "./lib/index.mjs",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@apexds/core": "^4.2.3",
+    "@types/jest": "^29.5.12",
+    "dts-bundle-generator": "^9.5.1",
+    "jest": "^29.7.0",
+    "rimraf": "^6.1.2",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
+  },
+  "sideEffects": false
+}
